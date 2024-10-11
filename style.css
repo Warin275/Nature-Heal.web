@@ -1,0 +1,227 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Kanit', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/chiang-dao-open.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+nav{
+    display: flex;
+    padding: 0% 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #408B94;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 76px;
+}
+.text-box p{
+    margin:10px 0 40px;
+    font-size: 20px;
+}
+.Mountain-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #ffff;
+    border-radius: 30px;
+    padding: 50px 50px;
+    font-size: 20;
+    background: transparent;
+    position: absolute;
+    top: 75%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.Mountain-btn:hover{
+    border: 1px solid #408B94;
+    background: #408B94;
+    transition: 0.5s;
+}
+.Waterfall-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #ffff;
+    border-radius: 30px;
+    padding: 50px 50px;
+    font-size: 20;
+    background: transparent;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.Waterfall-btn:hover{
+    border: 1px solid #408B94;
+    background: #408B94;
+    transition: 0.5s;
+}
+.Canyon-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #ffff;
+    border-radius: 30px;
+    padding: 50px 50px;
+    font-size: 20;
+    background: transparent;
+    position: absolute;
+    top: 75%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.Canyon-btn:hover{
+    border: 1px solid #408B94;
+    background: #408B94;
+    transition: 0.5s;
+}
+@media (max-width:700px){
+    .text-box h1{
+        font-size: 36px;
+}
+}
+/* mountain page */
+.Mountain-header{
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/chiang-dao-open.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;   
+}
+.Mountain-header h1{
+    font-size: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.big-box{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 7%;
+}
+.Mountain-box{
+    height: 40vh;
+    width: 40vh;
+    text-decoration: none;
+    border-radius: 30px;
+    background-color: #B8DBD8;
+    transition: all 0.5s;
+}
+.Mountain-box:hover {
+    transform: scale(1.05);
+}
+/* waterfall page */
+.Waterfall-header{
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/chiang-dao-open.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;   
+}
+.Waterfall-header h1{
+    font-size: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.big-box2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 7%;
+}
+.Waterfall-box{
+    height: 40vh;
+    width: 40vh;
+    text-decoration: none;
+    border-radius: 30px;
+    background-color: #B8DBD8;
+    transition: all 0.5s;
+}
+.Waterfall-box:hover {
+    transform: scale(1.05);
+}
+/* canyon page */
+.Canyon-header{
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/chiang-dao-open.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;   
+}
+.Canyon-header h1{
+    font-size: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.big-box3{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6%;
+}
+.Canyon-box{
+    height: 40vh;
+    width: 40vh;
+    text-decoration: none;
+    border-radius: 30px;
+    background-color: #B8DBD8;
+    transition: all 0.5s;
+}
+.Canyon-box:hover {
+    transform: scale(1.05);
+}
